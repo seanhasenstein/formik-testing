@@ -1,0 +1,98 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.form p {
+  margin: 0.25rem 0 1.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.section {
+  margin-top: 1.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.section:first-of-type {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.lg-half {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lg-half > div {
+  width: 48%;
+}
+
+.item {
+  margin: 0 0 1.5rem;
+}
+
+.liabilityAgreement {
+  margin: 0.875rem 0 0;
+  display: flex;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.liabilityAgreement input {
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.form button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  background-color: #111827;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 250ms ease-out;
+}
+
+.form button:hover {
+  background-color: #000;
+}
+
+.form button:focus {
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px,
+    rgb(99, 102, 241) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.error {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #dc2626;
+}
+
+@media (max-width: 640px) {
+  .lg-half {
+    flex-direction: column;
+  }
+
+  .lg-half > div {
+    width: 100%;
+  }
+}
